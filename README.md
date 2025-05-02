@@ -1,7 +1,7 @@
 # Футбольные тактики | Arsenal
 
-![Arsenal Logo](images/arsenal-logo.png)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Arsenal Logo](images/arsenal-logo.png)
 
 ## 📋 Описание проекта
 
