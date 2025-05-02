@@ -1,0 +1,153 @@
+/* Стили для редактора тактик */
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.tactic-templates {
+    align-self: flex-end;
+    background: rgba(255,255,255,0.10);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 1rem;
+}
+.tactic-templates label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+.field-area {
+    position: relative;
+    width: 420px;
+    height: 650px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    overflow: hidden;
+}
+.football-field {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 18px;
+}
+#players-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.player-shirt {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #d32f2f 60%, #ff5252 100%);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: grab;
+    z-index: 2;
+    pointer-events: auto;
+    transition: box-shadow 0.2s;
+}
+.player-shirt.dragging {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+    opacity: 0.8;
+}
+.player-position {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffd600;
+    font-size: 1.1rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+.goalkeeper {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #263238 60%, #607d8b 100%);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    pointer-events: none;
+}
+.save-block {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.save-block button {
+    background: linear-gradient(135deg, #b71c1c 60%, #f44336 100%);
+    min-width: 160px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.save-block button:hover {
+    background: linear-gradient(135deg, #f44336 60%, #b71c1c 100%);
+}
+@media (max-width: 600px) {
+    .field-area {
+        width: 98vw;
+        height: 60vw;
+        min-height: 320px;
+        min-width: 200px;
+    }
+    .player-shirt, .goalkeeper {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+}
+.tactic-templates select, .tactic-templates button {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #d32f2f;
+    background: #fff;
+    color: #222;
+    margin-right: 0.5rem;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 1px 4px rgba(211,47,47,0.07);
+}
+.tactic-templates select:focus, .tactic-templates button:focus {
+    outline: none;
+    border-color: #ff5252;
+    box-shadow: 0 0 0 2px rgba(211,47,47,0.15);
+}
+.tactic-templates button {
+    background: linear-gradient(90deg, #d32f2f 60%, #ff5252 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tactic-templates button:hover {
+    background: linear-gradient(90deg, #b71c1c 60%, #ff5252 100%);
+}

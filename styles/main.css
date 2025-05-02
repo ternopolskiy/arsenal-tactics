@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #b71c1c 0%, #f44336 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: #ffd600;
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(255,255,255,0.07);
+    border-radius: 18px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.arsenal-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tactic-block {
+    margin-bottom: 2.5rem;
+    background: rgba(255,255,255,0.10);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.tactic-img, .moment-img {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 1rem auto 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0 0.5rem 0;
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+    .main-content {
+        padding: 1rem 0.5rem;
+    }
+    .tactic-img, .moment-img {
+        max-width: 98vw;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактор тактик | Arsenal</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/editor.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html">Главная</a>
+        <a href="tactics.html">Тактики</a>
+        <a href="editor.html">Редактор тактик</a>
+    </nav>
+    <main class="main-content">
+        <h1>Редактор футбольных тактик</h1>
+        <div class="editor-container">
+            <div class="tactic-templates">
+                <label for="template-select">Шаблон тактики:</label>
+                <select id="template-select">
+                    <option value="4-3-3">4-3-3</option>
+                    <option value="3-4-3">3-4-3</option>
+                    <option value="4-2-3-1">4-2-3-1</option>
+                    <option value="4-4-2">4-4-2</option>
+                </select>
+                <button id="apply-template">Применить</button>
+            </div>
+            <div class="field-area">
+                <img src="../images/field.png" alt="Футбольное поле" class="football-field" id="football-field">
+                <div id="players-container"></div>
+                <div class="goalkeeper" style="left: 44%; top: 86%;">ВР</div>
+            </div>
+            <div class="save-block">
+                <button id="save-png">Сохранить PNG</button>
+                <button id="save-svg">Сохранить SVG</button>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/editor.js"></script>
+    <footer>
