@@ -131,4 +131,4 @@
 
 ---
 
-© 2025 Arsenal  x Ternopolskiy Tactics | Все права защищены
+© 2025 Arsenal | Все права защищены
